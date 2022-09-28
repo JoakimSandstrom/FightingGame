@@ -1,0 +1,15 @@
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.csproj.AssemblyReference.cache
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.AssemblyInfoInputs.cache
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.AssemblyInfo.cs
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.csproj.CoreCompileInputs.cache
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\bin\Debug\net6.0\FightingGame.exe
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\bin\Debug\net6.0\FightingGame.deps.json
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\bin\Debug\net6.0\FightingGame.runtimeconfig.json
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\bin\Debug\net6.0\FightingGame.dll
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\bin\Debug\net6.0\FightingGame.pdb
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.dll
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\refint\FightingGame.dll
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.pdb
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\FightingGame.genruntimeconfig.cache
+C:\Users\joakim.sandstrom1\.vscode\FightingGame\FightingGame\obj\Debug\net6.0\ref\FightingGame.dll
