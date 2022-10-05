@@ -5,6 +5,7 @@ public class Player : Fighter
     public Weapon weapon = new Weapon();
     public override void Damage(Fighter target)
     {
-        target.HitPoints -= Math.Round(str * ((weapon.maxDamage-weapon.minDamage)*rng.NextDouble()+weapon.minDamage),2);
+        Dmg = Math.Round(str * ((weapon.maxDamage-weapon.minDamage)*rng.NextDouble()+weapon.minDamage),2);
+        target.HitPoints -= Dmg;
     }
 }

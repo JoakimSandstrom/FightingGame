@@ -12,6 +12,7 @@ public class Fighter
     public double cD;
     public double dodge;
 
+    private double totalDmg = 0;
     public virtual void Damage(Fighter target){}
     public double HitPoints
     {
@@ -24,8 +25,23 @@ public class Fighter
             hp = Math.Max(value, 0);
         }
     }
-    public void ShowHp()
+    public double ShowHp()
     {
-        Console.WriteLine(Math.Round(hp));
+        return Math.Round(hp);
+    }
+    public double Dmg
+    {
+        get
+        {
+            return totalDmg;
+        }
+        set
+        {
+            totalDmg = Math.Max(value, 0);
+        }
+    }
+    public void GetDmg()
+    {
+        Console.WriteLine(totalDmg);
     }
 }

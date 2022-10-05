@@ -27,6 +27,7 @@ while(select)
 
 while(true)
 {
+    
     Battle meny = new Battle(p1,p2);
     
     
