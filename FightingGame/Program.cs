@@ -1,8 +1,11 @@
 ﻿int character = 0;
-Player p1 = new Player();
-Console.WriteLine("Choose your Character: \n 1. Rogue \n 2. Paladin \n 3. Mage");
 bool select = true;
+
+Player p1 = new Player();
 Paladin p2 = new Paladin();
+Gamestate menu = new Gamestate();
+
+Console.WriteLine("Choose your Character: \n 1. Rogue \n 2. Paladin \n 3. Mage");
 while(select)
 {
     int.TryParse(Console.ReadLine(), out character);
@@ -25,11 +28,12 @@ while(select)
     p1.weapon = new Weapon();
 }
 
+
 while(true)
 {
     
-    Battle meny = new Battle(p1,p2);
-    
+    menu = new Battle(p1,p2);
+    menu = new Mainmenu();
     
     Console.ReadLine();
 }
