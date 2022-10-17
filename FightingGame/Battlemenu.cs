@@ -7,11 +7,11 @@ public class Battlemenu
     private int turn = 1;
 
     
-    public void Battle(Player p1,Player p2)
+    public void PvP(Player p1,Player p2)
     {
         while(p1.Hp != 0 &&  p2.Hp != 0)
         {
-            PrintBattle(p1,p2);
+            PrintPvP(p1,p2);
             while(select)
             {
                 int.TryParse(Console.ReadLine(), out action);
@@ -35,7 +35,7 @@ public class Battlemenu
         PrintWinner(p1,p2);
     }
     
-    public void PrintBattle(Player p1,Player p2)
+    public void PrintPvP(Player p1,Player p2)
     {
         Console.Clear();
         Console.WriteLine("Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.ShowHp()+"\n"+"P2-HP: "+p2.ShowHp());

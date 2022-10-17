@@ -1,7 +1,7 @@
 using System;
 public class Fighter
 {
-    public string? Name {get;set;}
+    public string Name {get;set;} = "bob";
     private double hp;
     public double Hp 
     {

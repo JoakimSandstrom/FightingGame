@@ -10,5 +10,5 @@ public class Paladin : Player
         Cc = 0;
         Cd = 2;
         Dodge = 0;
-    }    
+    }
 }
