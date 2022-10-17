@@ -1,9 +1,11 @@
 ﻿int character = 0;
 bool select = true;
+int choice = 0;
 
 Player p1 = new Player();
 Paladin p2 = new Paladin();
-Gamestate menu = new Gamestate();
+Mainmenu menu = new Mainmenu();
+Battlemenu battle = new Battlemenu();
 
 Console.WriteLine("Choose your Character: \n 1. Rogue \n 2. Paladin \n 3. Mage");
 while(select)
@@ -31,9 +33,23 @@ while(select)
 
 while(true)
 {
+    choice = menu.Menu();
+    switch(choice)
+    {
+        case 1:
+            battle.Battle(p1,p2);
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            Environment.Exit(1);
+            break;
+        default:
+            break;
+    }
     
-    menu = new Battle(p1,p2);
-    menu = new Mainmenu();
     
     Console.ReadLine();
 }

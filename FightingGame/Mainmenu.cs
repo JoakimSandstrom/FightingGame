@@ -6,33 +6,23 @@ public class Mainmenu : Gamestate
     public int character = 0;
     public bool pvp = false;
 
-    public void Menu()
+    public int Menu()
     {
         PrintMenu();
-        while(select)
+        int.TryParse(Console.ReadLine(), out choice);
+        switch(choice)
         {
-            int.TryParse(Console.ReadLine(), out choice);
-            select = false;
-            switch(choice)
-            {
-                case 1:
-                    PvP();
-                    break;
-                case 2:
-                    PveMenu();
-                    break;
-                case 3:
-                    PlayerMenu();
-                    break;
-                case 4:
-                    Quit();
-                    break;
-                default:
-                    select = true;
-                    break;
-            }
+            case 1:
+                return 1;
+            case 2:
+                return 2;
+            case 3:
+                return 3;
+            case 4:
+                return 4;
+            default:
+                return 5;
         }
-        select = true;
     }
     private void PrintMenu()
     {
@@ -62,9 +52,5 @@ public class Mainmenu : Gamestate
     private void PlayerMenu()
     {
 
-    }
-    private void Quit()
-    {
-        Environment.Exit(1);
     }
 }

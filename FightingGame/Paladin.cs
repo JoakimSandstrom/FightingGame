@@ -3,12 +3,12 @@ public class Paladin : Player
 {
     public Paladin()
     {
-        hp = 120;
-        str = 15;
-        wis = 10;
-        def = 0.1;
-        cC = 0;
-        cD = 2;
-        dodge = 0;
+        Hp = 120;
+        Str = 15;
+        Wis = 10;
+        Def = 0.1;
+        Cc = 0;
+        Cd = 2;
+        Dodge = 0;
     }    
 }

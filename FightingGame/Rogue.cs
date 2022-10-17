@@ -3,13 +3,13 @@ public class Rogue : Player
 {
     public Rogue()
     {
-        hp = 100;
-        str = 10;
-        wis = 8;
-        def = 0;
-        cC = 0.1;
-        cD = 2;
-        dodge = 0.1;
+        Hp = 100;
+        Str = 10;
+        Wis = 8;
+        Def = 0;
+        Cc = 0.1;
+        Cd = 2;
+        Dodge = 0.1;
     }
     
 }

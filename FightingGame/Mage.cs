@@ -3,12 +3,12 @@ public class Mage : Player
 {
     public Mage()
     {
-        hp = 90;
-        str = 6;
-        wis = 15;
-        def = 0;
-        cC = 0.1;
-        cD = 2;
-        dodge = 0;
+        Hp = 90;
+        Str = 6;
+        Wis = 15;
+        Def = 0;
+        Cc = 0.1;
+        Cd = 2;
+        Dodge = 0;
     }
 }

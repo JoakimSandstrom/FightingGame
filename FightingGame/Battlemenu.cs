@@ -1,13 +1,15 @@
 using System;
-public class Battle : Gamestate
+public class Battlemenu
 {
     private int action = 0;
     private bool select = true;
     private int round = 1;
     private int turn = 1;
-    public Battle(Player p1,Player p2)
+
+    
+    public void Battle(Player p1,Player p2)
     {
-        while(p1.HitPoints != 0 &&  p2.HitPoints != 0)
+        while(p1.Hp != 0 &&  p2.Hp != 0)
         {
             PrintBattle(p1,p2);
             while(select)
@@ -43,13 +45,13 @@ public class Battle : Gamestate
     public void PrintWinner(Player p1,Player p2)
     {
         Console.Clear();
-        if (p1.HitPoints == 0)
+        if (p1.Hp == 0)
         {
-            Console.WriteLine("The Winner is "+p1.name);
+            Console.WriteLine("The Winner is "+p1.Name);
         }
         else
         {
-            Console.WriteLine("The Winner is "+p2.name);
+            Console.WriteLine("The Winner is "+p2.Name);
         }
     }
     public void Attack(Player p1, Player p2)
@@ -57,12 +59,12 @@ public class Battle : Gamestate
         if (turn == 1)
         {
             p1.Damage(p2);
-            p1.GetDmg();
+            Console.WriteLine(p1.Tdmg);
         }
         else
         {
             p2.Damage(p1);
-            p2.GetDmg();
+            Console.WriteLine(p2.Tdmg);
         }
     }
     public void Round()
@@ -80,5 +82,4 @@ public class Battle : Gamestate
             turn = 2;
         }
     }
-
 }
