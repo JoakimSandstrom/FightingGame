@@ -38,6 +38,7 @@ while(select)
 }
 p1.SetName();
 
+
 while(true)
 {
     choice = menu.Menu();
@@ -82,5 +83,6 @@ while(true)
             break;
     }
     
+    Console.ReadLine();
     Console.ReadLine();
 }
