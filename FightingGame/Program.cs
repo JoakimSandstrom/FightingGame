@@ -27,10 +27,11 @@ while(select)
             p1 = new Paladin();
             break;
         case 3:
-           p1 = new Mage();
+            p1 = new Mage();
             break;
         default:
             select = true;
+            Console.WriteLine("Try again. Choose by typing 1,2 or 3");
             break;
     }
     p1.weapon = new Weapon();

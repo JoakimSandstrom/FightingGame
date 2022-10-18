@@ -15,6 +15,7 @@ public class Player : Fighter
         while(select1)
         {
             select1 = false;
+            select = true;
             Console.WriteLine("Name your character: ");
             Name = Console.ReadLine();
             
