@@ -3,6 +3,7 @@ public class Paladin : Player
 {
     public Paladin()
     {
+        MaxHp = 120;
         Hp = 120;
         Str = 15;
         Wis = 10;
@@ -10,5 +11,15 @@ public class Paladin : Player
         Cc = 0;
         Cd = 2;
         Dodge = 0;
+
+        SpellName1 = "";
+        SpellName2 = "";
+        SpellName3 = "";
+        SpellName4 = "";
+    }
+
+    public override void Spell1(Fighter target)
+    {
+        
     }
 }
