@@ -7,43 +7,22 @@ public class Player : Fighter
     public string SpellName3{get; protected set;} = "";
     public string SpellName4{get; protected set;} = "";
 
+    private bool b = false;
     Random rng = new Random();
     public Weapon weapon = new Weapon();
-    public void Attack(Fighter target)
-    {
-        Tdmg = Math.Round(Str * ((weapon.maxDamage-weapon.minDamage)*rng.NextDouble()+weapon.minDamage),2);
-        Damage(target);
-    }
     public void SetName()
     //Set the players name
     {
-        bool select = true;
-        bool select1 = true;
-        while(select1)
         //Repeat untill they have choosen a name
+        while(b == false)
         {
-            select1 = false;
-            select = true;
+            Mainmenu.PrintTitel();
             Console.WriteLine("Name your character: ");
-            Name = Console.ReadLine();
+            string? v = Console.ReadLine();
+            if (v == null) Name = "";
+            else Name = v;
             
-            while(select)
-            {
-                Console.WriteLine("Do you want to name your character "+Name+"\ny/n");
-                select = false;
-                string choice = Console.ReadLine();
-                switch(choice)
-                {
-                    case "y":
-                        break;
-                    case "n":
-                        select1 = true;
-                        break;
-                    default:
-                        select = true;
-                        break;
-                }
-            }
+            b = Utilities.YesOrNo(1,"Do you want to name your character "+Name+"\ny/n","Type 'y' for yes or 'n' for no");
         }
     }
 
@@ -53,4 +32,16 @@ public class Player : Fighter
     public virtual void Spell2(Fighter target){}
     public virtual void Spell3(Fighter target){}
     public virtual void Spell4(Fighter target){}
+    public string ListSpells()
+    {
+        return "1. "+SpellName1+"\n2. "+SpellName2+"\n3. "+SpellName3+"\n4. "+SpellName4;
+    }
+
+    //Attack
+    public void Attack(Fighter target)
+    {
+        Tdmg = Math.Round(TempDmgMult*DmgMult*Str * ((weapon.maxDamage-weapon.minDamage)*rng.NextDouble()+weapon.minDamage),2);
+        Damage(target);
+        Console.WriteLine("You Attacked for "+Tdmg+" points of damage");
+    }
 }

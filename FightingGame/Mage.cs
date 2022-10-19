@@ -23,19 +23,28 @@ public class Mage : Player
     {
         Tdmg = Math.Round(TempDmgMult*DmgMult*Wis * ((0.4)*rng.NextDouble()+0.8),2);
         Damage(target);
+        Console.WriteLine("You used "+SpellName1);
+        Console.WriteLine("You dealt "+Tdmg+" points of damage");
     }
     public override void Spell2(Fighter target)
     {
         Tdmg = Math.Round(TempDmgMult*DmgMult*Wis*0.75,2);
         Damage(target);
+        Console.WriteLine("You used "+SpellName2);
+        Console.WriteLine("You dealt "+Tdmg+" points of damage");
     }
     public override void Spell3(Fighter target)
     {
-        TempDmgMult *= 1.25;
+        TempDmgMult += 0.25;
         Hp -= (MaxHp*0.1);
+        Console.WriteLine("You used "+SpellName3);
+        Console.WriteLine("Damage increased by 25%");
+        Console.WriteLine("You lost "+(MaxHp*0.1)+" hp");
     }
     public override void Spell4(Fighter target)
     {
         Invulnerable = true;
+        Console.WriteLine("You used "+SpellName4);
+        Console.WriteLine("You are invulnerable untill your next turn");
     }
 }
