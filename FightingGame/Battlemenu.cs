@@ -17,6 +17,7 @@ public class Battlemenu
 
         while(p1.Hp != 0 &&  p2.Hp != 0)
         {
+            b = true;
             action = Utilities.AskForInt(0, 3, "Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.ShowHp()+"\n"+"P2-HP: "+p2.ShowHp()+"\n\n"+"--------------------\n1. Attack"+"\n"+"2. Spells", "ERROR: Choose 1 or 2");
             while(b)
             {

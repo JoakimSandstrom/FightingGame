@@ -19,6 +19,8 @@ public class Utilities
                     break;
                 case 2:
                     break;
+                default:
+                    break;
             }
             Console.WriteLine(message);
             if (repeat) Console.WriteLine(error);

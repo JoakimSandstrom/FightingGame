@@ -5,6 +5,7 @@ Battlemenu battle = new Battlemenu();
 
 int character = Utilities.AskForInt(1, 3, "P1: Choose your Character: \n 1. Rogue \n 2. Paladin \n 3. Mage", "ERROR: Choose 1, 2 or 3");
 
+//P1 Chooses Character
 switch(character)
 {
     case 1:
@@ -28,6 +29,7 @@ while(true) //Menu
     switch(choice)
     {
         case 1:
+            //P2 Chooses Character
             character = Utilities.AskForInt(1, 3, "P2: Choose your Character: \n 1. Rogue \n 2. Paladin \n 3. Mage", "ERROR: Choose 1, 2 or 3");
             switch (character)
             {
