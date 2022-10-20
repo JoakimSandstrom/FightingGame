@@ -22,16 +22,14 @@ public class Mage : Player
     public override void Spell1(Fighter target)
     {
         Tdmg = Math.Round(TempDmgMult*DmgMult*Wis * ((0.4)*rng.NextDouble()+0.8),2);
-        Damage(target);
         Console.WriteLine("You used "+SpellName1);
-        Console.WriteLine("You dealt "+Tdmg+" points of damage");
+        Damage(target);
     }
     public override void Spell2(Fighter target)
     {
         Tdmg = Math.Round(TempDmgMult*DmgMult*Wis*0.75,2);
-        Damage(target);
         Console.WriteLine("You used "+SpellName2);
-        Console.WriteLine("You dealt "+Tdmg+" points of damage");
+        Damage(target);
     }
     public override void Spell3(Fighter target)
     {

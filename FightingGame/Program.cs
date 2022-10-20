@@ -43,7 +43,6 @@ while(true) //Menu
                     p2 = new Mage();
                     break;
             }
-            
             p2.weapon = new Weapon();
             p2.SetName();
             battle.PvP(p1, p2);

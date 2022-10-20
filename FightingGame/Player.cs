@@ -42,6 +42,5 @@ public class Player : Fighter
     {
         Tdmg = Math.Round(TempDmgMult*DmgMult*Str * ((weapon.maxDamage-weapon.minDamage)*rng.NextDouble()+weapon.minDamage),2);
         Damage(target);
-        Console.WriteLine("You Attacked for "+Tdmg+" points of damage");
     }
 }

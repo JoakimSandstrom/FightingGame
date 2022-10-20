@@ -39,6 +39,10 @@ public class Battlemenu
                         break;
                 }
             }
+
+            if (turn == 1) p2.Invulnerable = false;
+            else p1.Invulnerable = false;
+
             Turn();
             Console.WriteLine("Press 'Enter' to end your turn!");
             Console.ReadLine();
