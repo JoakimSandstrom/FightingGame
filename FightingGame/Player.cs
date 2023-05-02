@@ -40,7 +40,6 @@ public class Player : Fighter
     //Attack
     public void Attack(Fighter target)
     {
-        Tdmg = Math.Round(TempDmgMult*DmgMult*Str * ((weapon.maxDamage-weapon.minDamage)*rng.NextDouble()+weapon.minDamage),2);
-        Damage(target);
+        Damage(target, Math.Round(TempDmgMult*DmgMult*Str * ((weapon.maxDamage-weapon.minDamage)*rng.NextDouble()+weapon.minDamage),2));
     }
 }

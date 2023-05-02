@@ -18,7 +18,7 @@ public class Battlemenu
         while(p1.Hp != 0 &&  p2.Hp != 0)
         {
             b = true;
-            action = Utilities.AskForInt(0, 3, "Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.ShowHp()+"\n"+"P2-HP: "+p2.ShowHp()+"\n\n"+"--------------------\n1. Attack"+"\n"+"2. Spells", "ERROR: Choose 1 or 2");
+            action = Utilities.AskForInt(0, 3, "Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.Hp+"\n"+"P2-HP: "+p2.Hp+"\n\n"+"--------------------\n1. Attack"+"\n"+"2. Spells", "ERROR: Choose 1 or 2");
             while(b)
             {
                 b = false;
@@ -65,7 +65,7 @@ public class Battlemenu
         //Player 1
         if (turn==1)
         {
-            action = Utilities.AskForInt(0, 5, "Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.ShowHp()+"\n"+"P2-HP: "+p2.ShowHp()+"\n\n"+"--------------------\n"+p1.ListSpells()+"\n5. Go back", "ERROR: Choose 1 - 5");
+            action = Utilities.AskForInt(0, 5, "Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.Hp+"\n"+"P2-HP: "+p2.Hp+"\n\n"+"--------------------\n"+p1.ListSpells()+"\n5. Go back", "ERROR: Choose 1 - 5");
             switch(action)
             {
                 case 1:
@@ -89,7 +89,7 @@ public class Battlemenu
         //Player 2
         else
         {
-            action = Utilities.AskForInt(0, 5, "Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.ShowHp()+"\n"+"P2-HP: "+p2.ShowHp()+"\n\n"+"--------------------\n"+p1.ListSpells()+"\n5. Go back", "ERROR: Choose 1 - 5");
+            action = Utilities.AskForInt(0, 5, "Round:"+round+" | Turn: P"+turn+"\n"+"P1-HP: "+p1.Hp+"\n"+"P2-HP: "+p2.Hp+"\n\n"+"--------------------\n"+p1.ListSpells()+"\n5. Go back", "ERROR: Choose 1 - 5");
             switch(action)
             {
                 case 1:
